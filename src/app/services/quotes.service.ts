@@ -17,7 +17,8 @@ export class QuotesService {
 
     headers.append( 'Authorization', this.authHeader );
 
-    let query = `?content=${ term }`;
+    // searching by movie_title, actor_name, character_name, content and categories
+    let query = `?multiple=${ term }`;
     let url   = this.baseUrl + query;
 
     console.log("URL: " + url);
