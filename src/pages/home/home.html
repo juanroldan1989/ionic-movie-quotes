@@ -5,48 +5,65 @@
 </ion-header>
 
 <ion-content padding>
-  <input
+  <ion-searchbar
+    [(ngModel)]="searchTerm"
+    (keypress)="searchQuotes()"
+    name="searchTerm"
+    >
+  </ion-searchbar>
+
+  <!-- <input
     [(ngModel)]="searchTerm"
     (keypress)="searchQuotes()"
     name="searchTerm"
     type="text"
     class="form-control"
     placeholder="Search by content..."
-  >
+  > -->
   <ion-card *ngFor="let quote of quotes">
     <ion-item>
       <ion-avatar item-start>
         <img src="assets/imgs/logo.png">
       </ion-avatar>
-      <h2>{{ quote.character.name }} <small>({{ quote.actor.name }})</small></h2>
-      <p>{{ quote.year }}</p>
+      <h2>{{ quote.character.name }} - <small>{{ quote.actor.name }}</small></h2>
+      <p>{{ quote.movie.title }} ({{ quote.year }})</p>
     </ion-item>
 
     <img [src]="quote.image_large_url">
     <!-- <img [src]="quote.image_thumb_url"> -->
 
     <ion-card-content>
-      <p>{{ quote.content }}</p>
+      <p>"{{ quote.content }}"</p>
     </ion-card-content>
 
     <ion-row>
       <ion-col>
         <button ion-button icon-left clear small>
-          <ion-icon name="thumbs-up"></ion-icon>
+          <ion-icon *ngIf="quote.rating >= 1" ios="ios-star" md="md-star"></ion-icon>
+          <ion-icon *ngIf="quote.rating >= 2" ios="ios-star" md="md-star"></ion-icon>
+          <ion-icon *ngIf="quote.rating >= 3" ios="ios-star" md="md-star"></ion-icon>
+          <ion-icon *ngIf="quote.rating >= 4" ios="ios-star" md="md-star"></ion-icon>
+          <ion-icon *ngIf="quote.rating >= 5" ios="ios-star" md="md-star"></ion-icon>
+          <ion-icon *ngIf="quote.rating >= 6" ios="ios-star" md="md-star"></ion-icon>
+          <ion-icon *ngIf="quote.rating >= 7" ios="ios-star" md="md-star"></ion-icon>
+          <ion-icon *ngIf="quote.rating >= 8" ios="ios-star" md="md-star"></ion-icon>
+          <ion-icon *ngIf="quote.rating >= 9" ios="ios-star" md="md-star"></ion-icon>
+          <ion-icon *ngIf="quote.rating == 10" ios="ios-star" md="md-star"></ion-icon>
+          <!-- <ion-icon ios="ios-star-outline" md="md-star-outline"></ion-icon> -->
           <div>{{ quote.rating }} Stars</div>
         </button>
       </ion-col>
-      <ion-col>
+      <!-- <ion-col>
         <button ion-button icon-left clear small>
           <ion-icon name="text"></ion-icon>
           <div>4 Comments</div>
         </button>
-      </ion-col>
-      <ion-col center text-center>
+      </ion-col> -->
+      <!-- <ion-col center text-center>
         <ion-note>
           11h ago
         </ion-note>
-      </ion-col>
+      </ion-col> -->
     </ion-row>
   </ion-card>
 </ion-content>
