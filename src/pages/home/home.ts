@@ -17,7 +17,9 @@ export class HomePage implements OnInit {
     private navCtrl: NavController
   ) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.searchQuotes();
+  }
 
   searchQuotes() {
     this._quotesService.getQuotes(this.searchTerm).subscribe(

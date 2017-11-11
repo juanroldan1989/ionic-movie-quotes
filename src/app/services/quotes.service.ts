@@ -5,10 +5,10 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class QuotesService {
 
-  // $ curl -H "Authorization: Token token=KLrVd4ojztrmS9xkBZNFHQtt" http://movie-quotes-api.herokuapp.com/v1/quotes
+  // $ curl -H "Authorization: Token token=3dvoD6MQYeqvH0HHa3AfXAtt" http://movie-quotes-app.herokuapp.com/api/v1/quotes
   // api_key
-  authHeader:string = "Token token=KLrVd4ojztrmS9xkBZNFHQtt";
-  baseUrl:string    = "http://movie-quotes-api.herokuapp.com/v1/quotes";
+  authHeader:string = "Token token=3dvoD6MQYeqvH0HHa3AfXAtt";
+  baseUrl:string    = "http://movie-quotes-app.herokuapp.com/api/v1/quotes";
 
   constructor( private http:Http ) { }
 
