@@ -39,6 +39,8 @@
     <ion-row>
       <ion-col>
         <button ion-button icon-left clear small>
+          <!-- quotes fetched from API - "rating" value always 1 - it doesn't change -->
+          <!-- quotes fetched from API - because we can leverage CORS -->
           <ion-icon *ngIf="quote.rating >= 1" ios="ios-star" md="md-star"></ion-icon>
           <ion-icon *ngIf="quote.rating >= 2" ios="ios-star" md="md-star"></ion-icon>
           <ion-icon *ngIf="quote.rating >= 3" ios="ios-star" md="md-star"></ion-icon>
