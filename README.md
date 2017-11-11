@@ -17,11 +17,24 @@ Ionic app interacting with [MovieQuotes](https://movie-quotes-app.herokuapp.com)
 
 2. Clone repository:
 
-```ruby
+```
 git clone git@github.com:juanroldan1989/ionic-movie-quotes.git
 ```
 
+3. Get a API Key (free). Please send an email to `juanroldan1989@gmail.com`
+
+4. Place API Key on this file:
+
 ```ruby
+# /app/services/quotes.service.ts
+
+...
+authHeader:string = "Token token=AAABBB111222";
+...
+```
+
+5. Launch server:
+```
 $ cd ionic-movie-quotes
 $ ionic serve
 ```
