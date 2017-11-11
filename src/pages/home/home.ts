@@ -10,7 +10,7 @@ import { QuotesService } from '../../app/services/quotes.service';
 export class HomePage implements OnInit {
 
   quotes:any         = [];
-  Searchterm:string  = "";
+  searchTerm:string  = "";
 
   constructor(
     private _quotesService:QuotesService,
@@ -20,8 +20,8 @@ export class HomePage implements OnInit {
   ngOnInit() { }
 
   searchQuotes() {
-    this._quotesService.getQuotes(this.Searchterm).subscribe(
-      data => { this.quotes = data }
+    this._quotesService.getQuotes(this.searchTerm).subscribe(
+      data => { this.quotes = data; console.log("quotes: " + data); }
     );
   }
 

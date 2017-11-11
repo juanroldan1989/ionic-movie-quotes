@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>MovieQuotes</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -16,13 +16,14 @@
   <ion-card *ngFor="let quote of quotes">
     <ion-item>
       <ion-avatar item-start>
-        <img src="img/marty-avatar.png">
+        <img src="assets/imgs/logo.png">
       </ion-avatar>
-      <h2>{{ quote.character.name }}</h2>
+      <h2>{{ quote.character.name }} <small>({{ quote.actor.name }})</small></h2>
       <p>{{ quote.year }}</p>
     </ion-item>
 
-    <img src="img/advance-card-bttf.png">
+    <img [src]="quote.image_large_url">
+    <!-- <img [src]="quote.image_thumb_url"> -->
 
     <ion-card-content>
       <p>{{ quote.content }}</p>
@@ -32,7 +33,7 @@
       <ion-col>
         <button ion-button icon-left clear small>
           <ion-icon name="thumbs-up"></ion-icon>
-          <div>12 Likes</div>
+          <div>{{ quote.rating }} Stars</div>
         </button>
       </ion-col>
       <ion-col>
