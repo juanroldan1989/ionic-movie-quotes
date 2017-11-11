@@ -26,12 +26,13 @@ $ cd ionic-movie-quotes
 $ ionic serve
 ```
 
-## App demonstration
+## Demo
 
-Searching quotes by `actors`, `characters`, `movies`, `genres` and even pieces of quotes.
+Searching quotes by `actors`, `characters`, `movies`, `genres` and even pieces of quotes. Please click on image to checkout the demo:
 
-<a href="https://drive.google.com/file/d/1BZFjo18BpPfmXwxDgERaeMwVBRlRziI3/view?usp=sharing" target="blank">
-  <img width="300" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/movie-quotes-ionic-screenshot.png" alt="ionic_movie_quoteslogo" />
+
+<a href="https://drive.google.com/file/d/1BZFjo18BpPfmXwxDgERaeMwVBRlRziI3/view?usp=sharing">
+  <img width="300" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/movie-quotes-ionic-screenshot.png" />
 </a>
 
 ## Q&A
