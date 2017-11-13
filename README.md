@@ -1,5 +1,12 @@
 <div align="left">
-  <a href="https://github.com/juanroldan1989/ionic-movie-quotes"><img width="136" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/logo.png" alt="ionic_movie_quoteslogo" /></a>
+  <a href="https://github.com/juanroldan1989/ionic-movie-quotes">
+    <img width="136" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/logo.png" alt="ionic_movie_quoteslogo" />
+    <img width="136" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/plus-logo.jpg" alt="ionic_movie_quoteslogo" />
+    <img width="136" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/ionic-logo.png" alt="ionic_movie_quoteslogo" />
+    <img width="136" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/plus-logo.jpg" alt="ionic_movie_quoteslogo" />
+    <img width="136" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/angular2-logo.png" alt="ionic_movie_quoteslogo" />
+  </a>
+ 
 </div>
 
 # MovieQuotes Ionic App
@@ -13,7 +20,7 @@ Ionic app interacting with [MovieQuotes](https://movie-quotes-app.herokuapp.com)
 
 ## Development
 
-1. Setup Node, NVM, Angular2 & Ionic frameworks.
+1. Setup Node 6.9.0 or higher, together with NPM 3 or higher, Angular2 and Ionic2 frameworks.
 
 2. Clone repository:
 
