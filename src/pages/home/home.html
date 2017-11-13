@@ -5,12 +5,26 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-searchbar
-    [(ngModel)]="searchTerm"
-    (keypress)="searchQuotes()"
-    name="searchTerm"
-    >
-  </ion-searchbar>
+  <ion-grid>
+    <ion-row>
+      <ion-col [attr.col-10]="loading ? true : null" [attr.col-12]="loading ? null : true">
+        <ion-searchbar
+          [(ngModel)]="searchTerm"
+          (keypress)="searchQuotes()"
+          name="searchTerm"
+          placeholder="Search any quote ..."
+          >
+        </ion-searchbar>
+      </ion-col>
+      <ion-col [attr.col-2]="loading ? true : null">
+        <div *ngIf="loading">
+          <!-- http://ionicframework.com/docs/v1/api/directive/ionSpinner/ -->
+          <ion-spinner icon="ripple" class="spinner-energized"></ion-spinner>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 
   <ion-card *ngFor="let quote of quotes">
     <ion-item>

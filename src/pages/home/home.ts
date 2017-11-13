@@ -10,6 +10,7 @@ import { QuotesService } from '../../app/services/quotes.service';
 export class HomePage implements OnInit {
 
   quotes:any         = [];
+  loading:boolean    = false;
   searchTerm:string  = "";
 
   constructor(
@@ -22,8 +23,13 @@ export class HomePage implements OnInit {
   }
 
   searchQuotes() {
+    this.loading = true;
     this._quotesService.getQuotes(this.searchTerm).subscribe(
-      data => { this.quotes = data; console.log("quotes: " + data); }
+      data => {
+        this.quotes = data;
+        console.log("quotes: " + data);
+        this.loading = false;
+      }
     );
   }
 
