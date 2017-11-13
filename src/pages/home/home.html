@@ -1,6 +1,9 @@
 <ion-header>
   <ion-navbar color="primary">
-    <ion-title>MovieQuotes</ion-title>
+    <ion-title>
+      <img src="assets/imgs/logo.png" height="20">
+      MovieQuotes
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -28,9 +31,9 @@
 
   <ion-card *ngFor="let quote of quotes">
     <ion-item>
-      <ion-avatar item-start>
+      <!-- <ion-avatar item-start>
         <img src="assets/imgs/logo.png">
-      </ion-avatar>
+      </ion-avatar> -->
       <h2>{{ quote.character.name }} - <small>{{ quote.actor.name }}</small></h2>
       <p>{{ quote.movie.title }} ({{ quote.year }})</p>
     </ion-item>
@@ -45,7 +48,7 @@
     <ion-row>
       <ion-col>
         <button ion-button icon-left clear small>
-          <div>Rating ({{quote.rating}}/10) &nbsp;</div>
+          <div>Rating &nbsp;</div>
           <ion-icon *ngIf="quote.rating >= 1" ios="ios-star" md="md-star"></ion-icon>
           <ion-icon *ngIf="quote.rating >= 2" ios="ios-star" md="md-star"></ion-icon>
           <ion-icon *ngIf="quote.rating >= 3" ios="ios-star" md="md-star"></ion-icon>
