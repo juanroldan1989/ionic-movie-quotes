@@ -1,17 +1,16 @@
 <div align="left">
   <a href="https://github.com/juanroldan1989/ionic-movie-quotes">
-    <img width="136" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/logo.png" alt="ionic_movie_quoteslogo" />
-    <img width="136" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/plus-logo.jpg" alt="ionic_movie_quoteslogo" />
-    <img width="136" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/ionic-logo.png" alt="ionic_movie_quoteslogo" />
-    <img width="136" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/plus-logo.jpg" alt="ionic_movie_quoteslogo" />
-    <img width="136" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/angular2-logo.png" alt="ionic_movie_quoteslogo" />
+    <img width="136" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/logo.png" alt="movie_quotes_logo" />
+    <img width="136" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/plus-logo.jpg" alt="plus_logo" />
+    <img width="136" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/ionic-logo.png" alt="ionic_logo" />
+    <img width="136" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/plus-logo.jpg" alt="plus_logo" />
+    <img width="136" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/angular2-logo.png" alt="angular_2_logo" />
   </a>
-
 </div>
 
 # MovieQuotes Ionic App
 
-Ionic app interacting with [MovieQuotes](https://movie-quotes-app.herokuapp.com) API.
+Ionic app interacting with [MovieQuotes API](https://movie-quotes-app.herokuapp.com)
 
 ## Features
 
@@ -49,7 +48,6 @@ $ ionic serve
 ## Demo
 
 Searching quotes by `actors`, `characters`, `movies`, `genres` and even pieces of quotes. Please click on image to checkout the demo:
-
 
 <a href="https://drive.google.com/file/d/1XUu0fIe6omecf77u8GvZUpRG5OorUVPJ/view?usp=sharing">
   <img width="300" src="https://github.com/juanroldan1989/ionic-movie-quotes/raw/master/src/assets/imgs/movie-quotes-ionic-screenshot.png" />
